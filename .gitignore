@@ -1,0 +1,94 @@
+# ==============================================================================
+# Git Ignore Configuration - Marketing Cron & Alert Scheduler
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Operating System & IDEs
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ------------------------------------------------------------------------------
+# Environment & Secrets (Never commit secrets)
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.env
+*.env.local
+
+# ------------------------------------------------------------------------------
+# Local CLI Binaries & Temp Files
+# ------------------------------------------------------------------------------
+.bin/
+tmp/
+temp/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ------------------------------------------------------------------------------
+# Python & uv (/service)
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.venv/
+service/.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+scheduler.db
+*.db
+*.sqlite
+*.sqlite3
+
+# ------------------------------------------------------------------------------
+# Node.js & Next.js (/ui)
+# ------------------------------------------------------------------------------
+node_modules/
+ui/node_modules/
+.next/
+ui/.next/
+out/
+ui/out/
+ui/build/
+.turbo/
+ui/.turbo/
+.vercel
